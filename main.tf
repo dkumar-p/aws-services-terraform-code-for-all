@@ -12,9 +12,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket               = "aws-smb-pavan-state-file"
-    key                  = "AWS-SMB-pavan-statefile-test.tfstate"
+    bucket = "aws-smb-pavan-state-file"
+    key    = "AWS-SMB-pavan-statefile-test.tfstate"
     #workspace_key_prefix = "workspaces"
-    region               = "ap-south-1"
+    region = "ap-south-1"
   }
 }

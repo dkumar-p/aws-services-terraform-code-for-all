@@ -41,3 +41,26 @@ variable "instance_type_1" {
   #default     = ""
 }
 
+variable "loadbalancer_name" {
+  description = "Load balancer name"
+  type        = string
+  #default     = ""
+}
+
+variable "load_balancer_type" {
+  description = "Load balancer type"
+  type        = string
+  #default     = ""
+}
+
+variable "type" {
+  description = "Load balancer Internal/Internet-facing"
+  type        = string
+  #default     = ""
+}
+
+variable "asg_name" {
+  description = "AWS SMB Training ASG"
+  type        = string
+  #default = ""  
+}

@@ -6,7 +6,7 @@ locals {
 module "ec2_instance_1" {
 
   source = "github.com/dkumar-p/terraform-aws-ec2-instance.git"
-  
+
   count = 2
 
   ami                         = var.ami_master
