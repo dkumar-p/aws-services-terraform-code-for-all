@@ -29,6 +29,18 @@ variable "vpc_private_subnets_cluster" {
   #default = ["eu-west-1a", "eu-west-1b"]
 }
 
+variable "ec2_instance_count" {
+  description = "Pavan's Ec2 instances count"
+  type        = string
+  default     = "2"
+}
+
+variable "ec2_create_volume" {
+  description = "Pavan's Ec2 Volumes count"
+  type        = string
+  default     = "2"
+}
+
 variable "ami_master" {
   description = "Pavan's personal AMI details"
   type        = string
